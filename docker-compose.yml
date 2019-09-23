@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  pypy36:
+    image: pypy36:latest
+    container_name: "pypy36"
+    hostname: pypy36
+    stdin_open: true
+    tty: true
