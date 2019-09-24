@@ -33,6 +33,11 @@ docker exec -ti pypy3 bash
 
 ## Pushing a new release to Docker Hub
 
+The build takes a loooooong time on Docker Hub -- 1.5 hours -- and the Docker
+Hub automated build system doesn't like this.  So we don't use Docker Hub's
+"Automated Builds" feature for this like we do on other images.  Instead, we
+build it manually and push.
+
 When you are ready to push a new release to [DockerHub](https://hub.docker.com), commit
 all your changes to `master`, then:
 
@@ -42,7 +47,10 @@ bumpversion patch
 git checkout build
 git merge master
 git push --tags origin master build
+# The build will take a long time -- 30 min or so
+make build
+make tag
+docker login
+# Enter the caltechads credentials
+make push
 ```
-
-Docker Hub will see the commits and build the new container images.  This takes
-up to 15 minutes.
