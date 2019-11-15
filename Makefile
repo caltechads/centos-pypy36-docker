@@ -15,9 +15,9 @@ image_name:
 	@echo ${DOCKER_REGISTRY}/${PACKAGE}:${VERSION}
 
 force-build:
-	docker build --no-cache -t earthworm:${VERSION} .
-	docker tag ${PACKAGE}:${VERSION} earthworm:latest
-	docker tag ${PACKAGE}:${VERSION} earthworm:${PYPY_VERSION}
+	docker build --no-cache -t ${PACKAGE}:${VERSION} .
+	docker tag ${PACKAGE}:${VERSION} ${PACKAGE}:latest
+	docker tag ${PACKAGE}:${VERSION} ${PACKAGE}:${PYPY_VERSION}
 	docker image prune -f
 
 build:
