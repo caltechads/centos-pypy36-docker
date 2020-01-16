@@ -16,9 +16,8 @@ stable version of pypy-3.6 (v7.1.1) installed into `/opt/pypy`.
  * `caltechads/pypy36:3.6-v7.2.0-build1`: the specific tag of latest version of the
    pypy3.6 build of `caltechads/pypy36:3.6-v7.2.0`
 
- * `caltechads/pypy36:3.6-v7.1.1`: the latest version of pypy3.6-v7.1.1 the previous release of pypy3.6
- * `caltechads/pypy36:3.6-v7.1.1-build1`: the specific tag of latest version of the
-   pypy3.6 build of `caltechads/pypy36:3.6-v7.1.1`
+ * `caltechads/pypy36:3.6-v7.1.1`: the latest version of pypy3.6-v7.1.1, the previous release of pypy3.6
+ * `caltechads/pypy36:3.6-v7.1.1-build1`: the specific tag of the latest build of `caltechads/pypy36:3.6-v7.1.1`
 
 ## Testing
 
