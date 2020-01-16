@@ -12,10 +12,13 @@ stable version of pypy-3.6 (v7.1.1) installed into `/opt/pypy`.
 
 ## Available image tags in Docker Hub
 
- * `caltechads/pypy36:3.6-v7.1.1`: the latest version of the Earthworm 7.9 container
+ * `caltechads/pypy36:3.6-v7.2.0`: the latest version of pypy3.6 build
+ * `caltechads/pypy36:3.6-v7.2.0-build1`: the specific tag of latest version of the
+   pypy3.6 build of `caltechads/pypy36:3.6-v7.2.0`
+
+ * `caltechads/pypy36:3.6-v7.1.1`: the latest version of pypy3.6-v7.1.1 the previous release of pypy3.6
  * `caltechads/pypy36:3.6-v7.1.1-build1`: the specific tag of latest version of the
-   pypy3 7.9 container.  Use this is you want to pin to a specific build of
-   `caltechads/pypy36:3.6-v7.1.1`
+   pypy3.6 build of `caltechads/pypy36:3.6-v7.1.1`
 
 ## Testing
 
