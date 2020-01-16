@@ -8,7 +8,7 @@ RUN rm -rf localtime && ln -s /usr/share/zoneinfo/America/Los_Angeles localtime
 ENV LC_ALL en_US.UTF-8
 ENV PYTHONUNBUFFERED 1
 # Check https://pypy.org/download.html for new stable releases of pypy3-3.6
-ENV PYPY3_VERSION 3.6-v7.1.1
+ENV PYPY3_VERSION 3.6-v7.2.0
 
 #install packages
 RUN yum -y install epel-release && \
@@ -56,7 +56,7 @@ RUN cd pypy${PYPY3_VERSION}-src/pypy/goal && \
     PYTHONPATH=../.. ./pypy3-c ../tool/build_cffi_imports.py && \
     cd ../tool/release && \
     ./package.py --archive-name=pypy${PYPY3_VERSION}-centos7
-RUN mv /tmp/usession-release-pypy${PYPY3_VERSION}-current/build/pypy${PYPY3_VERSION}-centos7 /opt/pypy && \
+RUN mv /tmp/usession-release-pypy${PYPY3_VERSION}*-current/build/pypy${PYPY3_VERSION}-centos7 /opt/pypy && \
     /opt/pypy/bin/pypy3 -m ensurepip
 
 ENV PATH /opt/pypy/bin:$PATH
