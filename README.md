@@ -6,17 +6,21 @@ instead of CPython is speed: it runs generally faster.
 
 This project provides a version of the base `centos:7` image (see the
 [DockerHub centos page](https://hub.docker.com/_/centos)) with the current
-stable version of pypy-3.6 (v7.1.1) installed into `/opt/pypy`.
+stable version of pypy-3.6 (v7.3.0) installed into `/opt/pypy`.
 
 [Repository page on Docker Hub](https://cloud.docker.com/u/caltechads/repository/docker/caltechads/pypy36)
 
 ## Available image tags in Docker Hub
 
- * `caltechads/pypy36:3.6-v7.2.0`: the latest version of pypy3.6 build
+ * `caltechads/pypy36:3.6-v7.3.0`: the latest version of pypy3.6 
+ * `caltechads/pypy36:3.6-v7.3.0-build1`: the specific tag of latest version of the
+   pypy3.6 build of `caltechads/pypy36:3.6-v7.3.0`
+
+ * `caltechads/pypy36:3.6-v7.2.0`: the latest version of pypy3.6-v7.2.0 the previous release of pypy3.6
  * `caltechads/pypy36:3.6-v7.2.0-build1`: the specific tag of latest version of the
    pypy3.6 build of `caltechads/pypy36:3.6-v7.2.0`
 
- * `caltechads/pypy36:3.6-v7.1.1`: the latest version of pypy3.6-v7.1.1, the previous release of pypy3.6
+ * `caltechads/pypy36:3.6-v7.1.1`: the latest version of pypy3.6-v7.1.1, an older release of pypy3.6
  * `caltechads/pypy36:3.6-v7.1.1-build1`: the specific tag of the latest build of `caltechads/pypy36:3.6-v7.1.1`
 
 ## Testing
