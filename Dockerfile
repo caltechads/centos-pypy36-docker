@@ -8,7 +8,7 @@ RUN rm -rf localtime && ln -s /usr/share/zoneinfo/America/Los_Angeles localtime
 ENV LC_ALL en_US.UTF-8
 ENV PYTHONUNBUFFERED 1
 # Check https://pypy.org/download.html for new stable releases of pypy3-3.6
-ENV PYPY3_VERSION 3.6-v7.2.0
+ENV PYPY3_VERSION 3.6-v7.3.0
 
 #install packages
 RUN yum -y install epel-release && \
